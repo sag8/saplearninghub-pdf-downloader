@@ -71,6 +71,8 @@ async function cookiePopup(page) {
   }
 }
 
+await page.setDefaultNavigationTimeout(0);
+
 async function navToSF(page) {
   try {
     console.info(`Navigating to SuccessFactor`);
